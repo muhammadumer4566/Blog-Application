@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title> Show Blogs</title>
+</head>
+
+<body class="bg-red-300">
+
+    <!--navabr-start -->
+
+    <nav
+        class="bg-white dark:bg-gray-300  w-full z-20 top-0 start-0 border-b border-white-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="logo.png" class="h-8" alt="Flowbite Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">AskHubBlogs</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="hamburger-button inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden mx-6 w-full md:flex md:w-auto md:order-1  "
+                id="navbar-sticky">
+                <a class="inline-block ml-9 bg-orange-500 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                    href="login.html">
+                    Write or Ask
+                </a>
+
+                <!-- Border -->
+
+                <a class="inline-block ml-24 rounded border border-current px-8 py-3 text-sm font-medium text-black-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+                    href="login.html">
+                    SignIn
+                </a>
+
+                <a class="inline-block ml-3 rounded border border-current px-8 py-3 text-sm font-medium text-black-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+                href="signup.html">
+                Signup
+            </a>
+            </div>
+            <form>
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative justify-center'">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full p-3 ps-10 px-20   text-gray-900 border border-gray-100 rounded-lg bg-gray-100 focus:ring-blue-500 focus:border-blue-200 dark:bg-gray-100  dark:border-orange-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Blog OR Query" required>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+        <!--navbar end--> 
+
+    <div id="blog-section">
+
+    </div>
+
+
+     <!-- <div class="w-5/6 mx-auto dark:bg-gray-300 dark:text-gray-50 mt-12 rounded-2xl ">
+        <div class="container grid grid-cols-12 gap-4 mx-auto bg-gray-300 justify-center rounded-2xl">
+            <div class="bg-no-repeat bg-cover col-span-12 lg:col-span-4 p-100 rounded-2xl"
+                style="background-image: url('pic.png'); background-position: center center; background-size: cover;">
+            </div>
+            <div class="text-black flex flex-col p-6 col-span-12 row-span-full lg:col-span-8 lg:p-10">
+                <div class="flex justify-start"></div>
+                <h1 class="text-3xl font-semibold text-black">React Js vs Javascript what's the difference</h1>
+                <p class="mb-5 font-dark text-black dark:text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliq et dictum
+                    interdum, nisi lorem egestas vitae scel
+
+                    <span id="more" class="hidden">erisque enim ligula venenatis dolor. M aecenas nisl est,
+                        ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum a gue ut aliquet.
+                        Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In libero s ed nunc
+                        venenatis imperdiet ed ornare turpis. Donec vitae dui eget tellus gravidaven ena tis.
+                        Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                    </span>
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-8 h-8 dark:text-black">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span id="name" class="self-center text-md">Muhammad Umer</span>
+                    </div>
+                    <span id="date" class="text-md">Jan 28 2024</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="w-5/6 mx-auto dark:bg-gray-300 dark:text-gray-50 mt-12 rounded-2xl ">
+        <div class="container grid grid-cols-12 gap-4 mx-auto bg-gray-300 justify-center rounded-2xl">
+            <div class="bg-no-repeat bg-cover col-span-12 lg:col-span-4 p-100 rounded-2xl"
+                style="background-image: url('pic.png'); background-position: center center; background-size: cover;">
+            </div>
+            <div class="text-black flex flex-col p-6 col-span-12 row-span-full lg:col-span-8 lg:p-10">
+                <div class="flex justify-start"></div>
+                <h1 class="text-3xl font-semibold text-black">React Js vs Javascript what's the difference</h1>
+                <p class="mb-5 font-dark text-black dark:text-black">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. venenatis dolor. Maecenas nisl <br> est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliq <br> et dictum
+                    interdum, nisi lorem egestas vitae scel -->
+                    <!-- The three dots -->
+                    <!-- <span id="dots">
+                        <button onclick="toggleText()" id="button" class="text-red-600 font-bold">Read more....</button>
+                    </span> -->
+                    <!-- This content only be shown as needed -->
+                    <!-- <span id="more" class="hidden">erisque enim ligula venenatis dolor. M <br> aecenas nisl est,
+                        ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum a <br> gue ut aliquet.
+                        Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In libero s <br> ed nunc
+                        venenatis imperdiet ed ornare turpis. Donec vitae dui eget tellus gravida venena <br> tis.
+                        Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                    </span>
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-8 h-8 dark:text-black">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="self-center text-md">Muhammad Umer</span>
+                    </div>
+                    <span class="text-md">Jan 28 2024</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script src="index.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-red-300 overflow-hidden">
+    <div class="container mx-auto max-w-2xl p-4">
+        <div class="flex flex-col h-screen justify-center items-center">
+            <form class="flex flex-col w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-3/6 pb-6 text-center rounded-3xl">
+                <h3 class="mb-3 mt-3 text-4xl font-extrabold text-black">Sign Up</h3>
+                <p class="mb-1 text-black font-bold">Welcome to AskHubBlogs</p>
+                <p class="mb-4 text-black">Register your Account</p>
+
+                <label for="email" class="mb-2 text-sm text-start text-black">Email</label>
+                <input id="email" type="email" placeholder="Enter your email"
+                    class="inputs_logins flex items-center w-full px-5 py-4 text-sm font-medium focus:bg-grey-800 mb-2 placeholder:text-black bg-grey-200 text-dark-grey-900 rounded-2xl" />
+
+                <label for="password" class="mb-2 text-sm text-start text-black">Password</label>
+                <input id="password" type="password" placeholder="Enter your password"
+                    class="flex items-center w-full px-5 py-4 mb-2 mr-2 text-sm font-medium focus:bg-grey-400 placeholder:text-black bg-grey-200 text-dark-grey-900 rounded-2xl" />
+
+                <label for="Confirm-password" class="mb-2 text-sm text-start text-black">Confirm Password</label>
+                <input id="Confirmpassword" type="password" placeholder="Enter your Confirm password"
+                    class="flex items-center w-full px-5 py-4 mb-5 mr-2 text-sm font-medium focus:bg-grey-400 placeholder:text-black bg-grey-200 text-dark-grey-900 rounded-2xl" />
+
+                <button id="signupbtn"
+                    class="w-full sm:w-4/5 px-6 py-5 mb-5 text-md font-bold leading-none text-white transition duration-300 md:w-80 rounded-2xl hover:bg-grey-800 focus:ring-4 focus:ring-black bg-black">Sign
+                    Up</button>
+                <div class="flex items-center mb-3">
+                    <hr class="h-0 border-b border-solid border-black grow">
+                    <p class="mx-4 text-base">or</p>
+                    <hr class="h-0 border-b border-solid border-black grow">
+                </div>
+
+                <p class="text-sm leading-relaxed text-base">Are you already registered? <a href="login.html"
+                        class="font-bold text-black">Login here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="signup.js" type="module"></script>
+
+</html>

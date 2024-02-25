@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-red-300 overflow-hidden">
+    <div class="container mx-auto max-w-2xl p-4">
+        <div class="flex flex-col h-screen justify-center items-center">
+            <form class="flex flex-col w-full sm:w-3/4 md:w-1/2 lg:w-4/5 xl:w-3/6 pb-6 text-center rounded-3xl">
+                <h3 class="mb-3 text-4xl font-extrabold text-black">Sign In</h3>
+                
+                <p class="mb-3 text-black font-bold">Welcome to AskHubBlogs</p>
+                <p class="mb-4 text-black">Please Enter your email and password</p>
+
+                <label for="email" class="mb-2 text-sm text-start text-black">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" class="inputs_logins flex items-center w-full px-5 py-4 text-sm font-medium focus:bg-grey-800 mb-2 placeholder:text-black bg-grey-200 text-black rounded-2xl" />
+                <label for="password" class="mb-2 text-sm text-start mt-3 text-black">Password</label>
+                <input id="password" type="password" placeholder="Enter your password" class="flex items-center w-full px-5 py-4 mb-5 mr-2 text-sm font-medium focus:bg-grey-400 placeholder:text-black bg-grey-200 text-black rounded-2xl" />
+
+                <button id="signInbtn" class="w-full px-6 py-5 mb-5 text-md font-bold leading-none text-white transition duration-300 md:w-80 rounded-2xl hover:bg-grey-800 focus:ring-4 focus:ring-black bg-black">Sign In</button>
+                <div class="flex items-center mb-3">
+                    <hr class="h-0 border-b border-solid border-black grow">
+                    <p class="mx-4 text-black">or</p>
+                    <hr class="h-0 border-b border-solid border-black grow">
+                </div>
+
+                <a id="loginwithGooglebtn" class="cursor-pointer flex items-center justify-center w-full py-4 mb-4 text-sm font-medium transition duration-300 rounded-2xl text-black bg-white hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
+                    <img class="h-5 mr-2" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-google.png" alt="">
+                    Sign in with Google
+                </a>
+
+                <p class="text-sm leading-relaxed text-black">Not registered yet? <a href="signup.html" class="font-bold text-black">Create an Account</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="login.js" type="module"></script>
+</html>
